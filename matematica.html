@@ -1,0 +1,123 @@
+ <!DOCTYPE html>
+<html>
+<head>
+ 	
+ 	<link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/league.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/lenguaje.css">
+ 	<script src="js/jquery-1.12.1.min.js"></script>
+ 	
+<meta charset="UTF-8">
+<title>¡Suma y resta!</title>
+</head>
+
+<body>
+
+	 <div class="reveal">
+            <div class="slides">
+	
+		<section id="suma">
+			<h2>¿Sabes sumar?</h2>
+			<div id="juego-suma" class="juego-suma">
+				<div id="data">
+					<img id="n" src="">
+					<img src="images/+.png">
+					<img id="n2" src="">
+				</div>
+				<div class="resp">
+					<ul id="list">
+						<li id="opc1"><a href="#"> <img id="op1" src=""><img id="op1.1"> </a></li>
+						<li id="opc2"><a href="#"> <img id="op2" src=""><img id="op2.2"> </a></li>
+						<li id="opc3"><a href="#"> <img id="op3" src=""><img id="op3.3"> </a></li>
+					</ul>
+				</div>
+				
+			</div>
+		</section>
+		<section id="resta">
+			<h2>¿Seguro puedes restar?</h2>
+			<div id="juego-resta" class="juego-resta">
+				<div id="dataR">
+					<img id="nR" src="">
+					<img src="images/-.png">
+					<img id="n2R" src="">
+				</div>
+				<div class="resp">
+					<ul id="listR">
+						<li id="opc1R"><a href="#"> <img id="op1R" src=""></a></li>
+						<li id="opc2R"><a href="#"> <img id="op2R" src=""></a></li>
+						<li id="opc3R"><a href="#"> <img id="op3R" src=""></a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section id="mix" >
+			<h2>Si te sientes con suerte...</h2>
+			<div class="juego-mix">
+				<div id="dataM">
+					<img id="nM" src="">
+					<img src="images/+.png">
+					<img id="n2M" src="">
+					<img  src="images/-.png">
+					<img id="n3M" src="">
+				</div>
+				<div class="resp">
+					<ul id="listM">
+						<li id="opc1M"><a href="#"> <img id="op1M" src=""><img id="op1M1" src=""></a></li>
+						<li id="opc2M"><a href="#"> <img id="op2M" src=""><img id="op2M2" src=""></a></li>
+						<li id="opc3M"><a href="#"> <img id="op3M" src=""><img id="op3M3" src=""></a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+	</div>
+	</div>
+
+<script type="text/javascript">
+	  
+	$(function() {
+
+		Reveal.initialize({
+			  width: '100%',
+    		height: '100%',
+    		margin: 0.1,
+		});
+
+		if(Reveal.getCurrentSlide().id="suma")
+		values("suma");
+		else if(Reveal.getCurrentSlide().id="resta")
+		values("resta");
+		else if(Reveal.getCurrentSlide().id="mix")
+		values("mix");
+
+		Reveal.addEventListener( 'slidechanged', function( event ) {
+			restart();
+  			switch(event.currentSlide.id){
+  				case "suma":
+  				values("suma");
+  			break;
+  				case "resta":
+  				values("resta");
+  			break;
+  				case "mix":
+  				values("mix");
+  			break;
+  			}
+
+		} );
+
+	});
+
+
+</script>
+
+<!--ESTE SCRIPT DE ULTIMO PARA QUE AGARRE LO DE JQUERY (LOS ID)-->
+<!--todo el javascript que he escrito-->
+<script src="js/gerson.js"></script>
+<script src="js/reveal.js"></script>
+
+</body>
+
+</html> 

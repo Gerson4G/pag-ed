@@ -1,0 +1,76 @@
+body{
+	font-size: 18px;
+	background: rgba(0,0,0,0.4)
+}
+
+.sketch-container-free h2{
+	color: white;
+	margin:0;
+}
+
+.sketch-container-free, .sketch-container-paint{
+}
+
+.sketch-container-free .sketch-free{
+background-color: white;
+}
+
+.sketch-container-free .download{
+	margin: 0 auto;
+	width: 10em;
+	background: white;
+	border-radius: 2em;
+	display: block;
+	text-align: center;
+}
+
+.sketch-container-paint .texto .download{
+	background: white;
+	border-radius: 2em;
+	display: block;
+	text-align: center;
+}
+
+.sketch-container-paint h2{
+	color: white;
+	margin: 0;
+}
+
+.texto{
+	width: 35%;
+	display: inline-block;
+}
+
+.texto a{
+	background: white;
+	border-radius: 2em;
+}
+
+.sketch-container-paint .sketch-paint{
+background-color: white;
+display: inline-block;
+}
+
+.sketch-container-paint .paint{
+display: inline-block;
+background-color: yellow;
+width: 200px;
+height: 200px;
+}
+
+
+.tools .colors a,.tools .colors img{
+	display: inline-block;
+}
+
+#op1.1{
+display: none;
+}
+
+#op3.3{
+display: none;
+}
+
+#op2.2{
+display: none;
+}

@@ -1,0 +1,96 @@
+body{
+	font-size: 18px;
+	background: rgba(0,0,0,0.4);
+}
+
+header{
+	background: #0066cc;
+}
+
+header img{
+	padding-top: 0.5em;
+	padding-left: 0.5em;
+	width: 5em;
+	height: 5em;
+}
+
+.texto{
+	margin-left: 1em;
+	display: inline-block;
+}
+
+header h1, header h2{
+	color: white;
+}
+
+article{
+	text-align: center;
+	color: white;
+}
+
+.container{
+	height: 200px;
+}
+
+.slider{
+height: 100%;
+
+}
+
+.slider .sketch{
+	width: 100%;
+background-color: beige;
+display: inline-block;
+}
+
+.slider .sketch2{
+
+background-color: red;
+display: inline-block;
+}
+
+.slider .sketch1{
+
+background-color: blue;
+display: inline-block;
+}
+
+/*ACA ABAJO LO DE INDEX ARRIBA ESTA LO DE PRUEBA*/
+
+.container-menu{
+	width: 100%;
+	height: 100%;
+}
+
+.container-menu div{
+	text-align: center;
+	margin: 3em;
+	display: inline-block;
+	width: 40%;
+	height: 40%;
+
+}
+
+.container-menu{
+	text-align: center;
+}
+
+.container-menu div{
+	width: auto;
+	padding: 1em;
+	background: rgba(0,0,0,0.8);
+}
+
+.container-menu div a{
+	text-decoration: none;
+	color: white;
+	font-size: 2em;
+	display: block;
+}
+
+.container-menu div img{
+	margin: 0 auto;
+	display: block;
+	width: 15em;
+	height: 15em;
+}

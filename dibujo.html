@@ -1,0 +1,135 @@
+ <!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/white.css">
+  <link rel="stylesheet" href="css/normalize.css">
+	<script src="js/jquery-1.12.1.min.js"></script>
+	<script src="js/sketch.js"></script>
+ 	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+<meta charset="UTF-8">
+<title>¡Dibuja y diviertete!</title>
+</head>
+
+<body>
+<div class="reveal">
+<div class="slides">
+	<section class="sketch-container-free ">
+		
+			<h2>Dibujo Libre</h2>
+			<canvas class="sketch-free" id="sketch-free" width="1000" height="300"></canvas>
+				<div id="SketchTools" class="tools">
+		<div class="colors">
+		<!-- Basic tools -->
+		<a href="#sketch-free" data-color="#000000" title="Black"><img src="images/black_icon.png" alt="Black"/></a>
+		<a href="#sketch-free" data-color="#ff0000" title="Red"><img src="images/red_icon.png" alt="Red"/></a>
+		<a href="#sketch-free" data-color="#00ff00" title="Green"><img src="images/green_icon.png" alt="Green"/></a>
+		<a href="#sketch-free" data-color="#0000ff" title="Blue"><img src="images/blue_icon.png" alt="Blue"/></a>
+		<a href="#sketch-free" data-color="#ffff00" title="Yellow"><img src="images/yellow_icon.png" alt="Yellow"/></a>
+		<a href="#sketch-free" data-color="#00ffff" title="Cyan"><img src="images/cyan_icon.png" alt="Cyan"/></a>
+		<!-- Advanced colors -->
+		<a href="#sketch-free" data-color="#e74c3c" title="Alizarin"><img src="images/alizarin_icon.png" alt="Alizarin"/></a>
+		<a href="#sketch-free" data-color="#c0392b" title="Pomegrante"><img src="images/pomegrante_icon.png" alt="Pomegrante"/></a>
+		<a href="#sketch-free" data-color="#2ecc71" title="Emerald"><img src="images/emerald_icon.png" alt="Emerald"/></a>
+		<a href="#sketch-free" data-color="#1abc9c" title="Torquoise"><img src="images/torquoise_icon.png" alt="Torquoise"/></a>
+		<a href="#sketch-free" data-color="#3498db" title="Peter River"><img src="images/peterriver_icon.png" alt="Peter River"/></a>
+		<a href="#sketch-free" data-color="#9b59b6" title="Amethyst"><img src="images/amethyst_icon.png" alt="Amethyst"/></a>
+		<a href="#sketch-free" data-color="#f1c40f" title="Sun Flower"><img src="images/sunflower_icon.png" alt="Sun Flower"/></a>
+		<a href="#sketch-free" data-color="#f39c12" title="Orange"><img src="images/orange_icon.png" alt="Orange"/></a>
+		<a href="#sketch-free" data-color="#ecf0f1" title="Clouds"><img src="images/clouds_icon.png" alt="Clouds"/></a>
+		<a href="#sketch-free" data-color="#bdc3c7" title="Silver"><img src="images/silver_icon.png" alt="Silver"/></a>
+		<a href="#sketch-free" data-color="#7f8c8d" title="Asbestos"><img src="images/asbestos_icon.png" alt="Asbestos"/></a>
+		<a href="#sketch-free" data-color="#34495e" title="Wet Asphalt"><img src="images/wetasphalt_icon.png" alt="Wet Asphalt"/></a>
+		</div>
+		<!-- Size options -->
+		<div class="options">
+		<a href="#sketch-free" data-color="#ffffff" title="Eraser"><img src="images/eraser_icon.png" alt="Eraser"/></a>
+		<a href="#sketch-free" data-size="1"><img src="images/pencil_icon.png" alt="Pencil"/></a>
+		<a href="#sketch-free" data-size="3"><img src="images/pen_icon.png" alt="Pen"/></a>
+		<a href="#sketch-free" data-size="5"><img src="images/stick_icon.png" alt="Stick"/></a>
+		<a href="#sketch-free" data-size="9"><img src="images/smallbrush_icon.png" alt="Small brush"/></a>
+		<a href="#sketch-free" data-size="15"><img src="images/mediumbrush_icon.png" alt="Medium brush"/></a>
+		<a href="#sketch-free" data-size="30"><img src="images/bigbrush_icon.png" alt="Big brush"/></a>
+		<a href="#sketch-free" data-size="60"><img src="images/bucket_icon.png" alt="Huge bucket"/></a>
+
+		<a class="download" href="#sketch-free" data-download='png' id="DownloadPng">¡Descarga tu dibujo!</a>
+		</div>
+	</div>
+		
+  </section>
+  <section class="sketch-container-paint ">
+
+			<h2>Colorea</h2>
+      <div class="texto">
+  			<img id="paint" class="paint" />
+  			<a class="download" onclick="randomImage()">Nuevo dibujo</a>
+      </div>
+			<canvas class="sketch-paint" id="sketch-paint" width="500" height="380"></canvas>
+			<div id="SketchTools" class="tools">
+			<div class="colors">
+		<!-- Basic tools -->
+		<a href="#sketch-paint" data-color="#000000" title="Black"><img src="images/black_icon.png" alt="Black"/></a>
+		<a href="#sketch-paint" data-color="#ff0000" title="Red"><img src="images/red_icon.png" alt="Red"/></a>
+		<a href="#sketch-paint" data-color="#00ff00" title="Green"><img src="images/green_icon.png" alt="Green"/></a>
+		<a href="#sketch-paint" data-color="#0000ff" title="Blue"><img src="images/blue_icon.png" alt="Blue"/></a>
+		<a href="#sketch-paint" data-color="#ffff00" title="Yellow"><img src="images/yellow_icon.png" alt="Yellow"/></a>
+		<a href="#sketch-paint" data-color="#00ffff" title="Cyan"><img src="images/cyan_icon.png" alt="Cyan"/></a>
+		<!-- Advanced colors -->
+		<a href="#sketch-paint" data-color="#e74c3c" title="Alizarin"><img src="images/alizarin_icon.png" alt="Alizarin"/></a>
+		<a href="#sketch-paint" data-color="#c0392b" title="Pomegrante"><img src="images/pomegrante_icon.png" alt="Pomegrante"/></a>
+		<a href="#sketch-paint" data-color="#2ecc71" title="Emerald"><img src="images/emerald_icon.png" alt="Emerald"/></a>
+		<a href="#sketch-paint" data-color="#1abc9c" title="Torquoise"><img src="images/torquoise_icon.png" alt="Torquoise"/></a>
+		<a href="#sketch-paint" data-color="#3498db" title="Peter River"><img src="images/peterriver_icon.png" alt="Peter River"/></a>
+		<a href="#sketch-paint" data-color="#9b59b6" title="Amethyst"><img src="images/amethyst_icon.png" alt="Amethyst"/></a>
+		<a href="#sketch-paint" data-color="#f1c40f" title="Sun Flower"><img src="images/sunflower_icon.png" alt="Sun Flower"/></a>
+		<a href="#sketch-paint" data-color="#f39c12" title="Orange"><img src="images/orange_icon.png" alt="Orange"/></a>
+		<a href="#sketch-paint" data-color="#ecf0f1" title="Clouds"><img src="images/clouds_icon.png" alt="Clouds"/></a>
+		<a href="#sketch-paint" data-color="#bdc3c7" title="Silver"><img src="images/silver_icon.png" alt="Silver"/></a>
+		<a href="#sketch-paint" data-color="#7f8c8d" title="Asbestos"><img src="images/asbestos_icon.png" alt="Asbestos"/></a>
+		<a href="#sketch-paint" data-color="#34495e" title="Wet Asphalt"><img src="images/wetasphalt_icon.png" alt="Wet Asphalt"/></a>
+		</div>
+		<!-- Size options -->
+		<a href="#sketch-paint" data-color="#ffffff" title="Eraser"><img src="images/eraser_icon.png" alt="Eraser"/></a>
+		<a href="#sketch-paint" data-size="1"><img src="images/pencil_icon.png" alt="Pencil"/></a>
+		<a href="#sketch-paint" data-size="3"><img src="images/pen_icon.png" alt="Pen"/></a>
+		<a href="#sketch-paint" data-size="5"><img src="images/stick_icon.png" alt="Stick"/></a>
+		<a href="#sketch-paint" data-size="9"><img src="images/smallbrush_icon.png" alt="Small brush"/></a>
+		<a href="#sketch-paint" data-size="15"><img src="images/mediumbrush_icon.png" alt="Medium brush"/></a>
+		<a href="#sketch-paint" data-size="30"><img src="images/bigbrush_icon.png" alt="Big brush"/></a>
+		<a href="#sketch-paint" data-size="60"><img src="images/bucket_icon.png" alt="Huge bucket"/></a>
+		</div>
+
+</section>
+</div>
+</div>
+
+</body>
+<script src="js/reveal.js"></script>
+<script>
+    Reveal.initialize({
+    	  width: '100%',
+    		height: '100%',
+    		margin: 0.1,
+    });
+</script>
+<script type="text/javascript">
+
+ 	$(function() {
+    	$('#sketch-free').sketch();
+    	$('#sketch-paint').sketch();
+    	document.getElementById("paint").src = "images/paint1.jpg";
+	 });
+
+ 	function randomImage(){
+ 		var n = Math.floor((Math.random() * 3) + 1);
+ 		document.getElementById("paint").src = "images/paint"+n+".jpg";
+
+ 		var canvas = document.getElementById('sketch-paint');
+ 		canvas.getContext('2d').clearRect(0,0,1920,2000);
+ 		$('#sketch-paint').sketch('actions',[]);
+ 	}
+
+</script>
+
+</html>
