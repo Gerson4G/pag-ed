@@ -74,3 +74,9 @@ display: none;
 #op2.2{
 display: none;
 }
+
+.sketch-container-paint .principal a{
+	padding: 0.2em;
+	background: white;
+	border-radius: 2em;
+}

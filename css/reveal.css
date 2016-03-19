@@ -773,8 +773,8 @@ html:-moz-full-screen-ancestor {
 /*********************************************
  * FALLBACK
  *********************************************/
-.no-transforms {
-  overflow-y: auto; }
+/*.no-transforms {
+  overflow-y: auto; }*/
 
 .no-transforms .reveal .slides {
   position: relative;
@@ -1002,7 +1002,7 @@ html:-moz-full-screen-ancestor {
   .reveal.overview .slides section {
     height: 700px;
     opacity: 1 !important;
-    overflow: hidden;
+  /*  overflow: hidden; */
     visibility: visible !important;
     cursor: pointer;
     box-sizing: border-box; }
@@ -1022,7 +1022,7 @@ html:-moz-full-screen-ancestor {
     top: 0 !important;
     background: none;
     outline: none;
-    overflow: visible; }
+  /*  overflow: visible; } */
   .reveal.overview .backgrounds {
     -webkit-perspective: inherit;
             perspective: inherit; }
@@ -1186,7 +1186,7 @@ html:-moz-full-screen-ancestor {
           transform: scale(0.2); }
 
 .reveal .overlay.overlay-help .viewport {
-  overflow: auto;
+/*  overflow: auto;  */
   color: #fff; }
 
 .reveal .overlay.overlay-help .viewport .viewport-inner {
@@ -1237,7 +1237,7 @@ html:-moz-full-screen-ancestor {
 .reveal .roll {
   display: inline-block;
   line-height: 1.2;
-  overflow: hidden;
+/*  overflow: hidden; */
   vertical-align: top;
   -webkit-perspective: 400px;
           perspective: 400px;
