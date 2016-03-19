@@ -1,0 +1,10 @@
+body{
+  background: rgba(0,0,0,0.4);
+  font-size: 18px;
+}
+
+.principal a{
+  padding: 0.2em;
+  background: white;
+  border-radius: 2em;
+}
