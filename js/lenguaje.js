@@ -61,4 +61,68 @@ $(document).ready(function(){
     audioElement.setAttribute('src', 'sonidos/leon.mp3');
     audioElement.play();
   });
+
+////////////////
+///////////////
+
+$('.easy-modal').easyModal({
+      top: 100,
+      overlay: 0.2
+    });
+
+    $('#hand-perro').click(function(e) {
+      $('#modalPerro').trigger('openModal');
+      e.preventDefault();
+    });
+
+    $('#hand-gato').click(function(e) {
+      $('#modalGato').trigger('openModal');
+      e.preventDefault();
+    });
+
+    $('#hand-caballo').click(function(e) {
+      $('#modalCaballo').trigger('openModal');
+      e.preventDefault();
+    });
+
+    $('#hand-leon').click(function(e) {
+      $('#modalLeon').trigger('openModal');
+      e.preventDefault();
+    });
+
+    $('#hand-oso').click(function(e) {
+      $('#modalOso').trigger('openModal');
+      e.preventDefault();
+    });
+
+    $('#hand-pez').click(function(e) {
+      $('#modalPez').trigger('openModal');
+      e.preventDefault();
+    });
+
+    $('#hand-hamster').click(function(e) {
+      $('#modalHamster').trigger('openModal');
+      e.preventDefault();
+    });
+
+    $('#hand-aguila').click(function(e) {
+      $('#modalAguila').trigger('openModal');
+      e.preventDefault();
+    });
+
+    $('#hand-pinguino').click(function(e) {
+      $('#modalPinguino').trigger('openModal');
+      e.preventDefault();
+    });
+
+    $('#hand-mono').click(function(e) {
+      $('#modalMono').trigger('openModal');
+      e.preventDefault();
+    });
+
+    $('#hand-tortuga').click(function(e) {
+      $('#modalTortuga').trigger('openModal');
+      e.preventDefault();
+    });
+
 });

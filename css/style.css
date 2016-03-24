@@ -85,12 +85,12 @@ display: inline-block;
 	text-decoration: none;
 	color: white;
 	font-size: 2em;
-	display: block;
+	display: inline-block;
 }
 
 .container-menu div img{
 	margin: 0 auto;
 	display: block;
-	width: 15em;
-	height: 15em;
+	width: 8em;
+	height: 8em;
 }
